@@ -1,0 +1,31 @@
+/* ############################################## home ############################################## */
+
+.description .box-content{
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url(/files/image1.jpg);
+    height: 90vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.description .box-content .text-container{
+    max-width: 550px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 3em;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    animation: slide-from-left 1s forwards 0s 1 ease-in-out;
+}
+
+@keyframes slide-from-left{
+    from{
+        left: -20%;
+        opacity: 0;
+    }
+    to{
+        left: 7.5%;
+        opacity: 1;
+    }
+}
