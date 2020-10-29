@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/elements-styling.css">
+    <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/register-style.css">
     <link rel="stylesheet" href="./css/utility-classes.css">
+    <link rel="stylesheet" href="./css/responsive.css">
     <title>Document</title>
 </head>
 <body>
@@ -13,7 +15,24 @@
     <nav class="navbar text-light">
         <div class="container">
             <div class="nav-items">
+                <div class="hamburger-container nav-item">
+                    <input type="checkbox">
+                    <div class="hamburger-lines">
+                        <div class="hamburger-line line1"></div>
+                        <div class="hamburger-line line2"></div>
+                        <div class="hamburger-line line3"></div>
+                    </div>
+                    <ul class="edited-list-items">
+                        <li class="edited-list-item"><a href="./index.html">Home</a></li>
+                        <li class="edited-list-item"><a href="./login.html">Login</a></li>
+                        <li class="edited-list-item"><a href="./register.html">Register</a></li>
+                        <li class="edited-list-item"><a href="./about.html">About Us</a></li>
+                        <li class="edited-list-item"><a href="#contact-us">Contact Us</a></li>
+                    </ul>
+                </div>
+
                 <h3 class="text-large nav-item">Company Name</h3>
+
                 <ul class="list-items nav-item">
                     <li class="list-item"><a href="./index.html">Home</a></li>
                     <li class="list-item"><a href="./login.html">Login</a></li>
