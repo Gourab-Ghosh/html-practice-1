@@ -77,6 +77,8 @@
 }
 
 .btn-primary{
+    border: 2px solid darkgreen;
+    color: darkgreen;
     background-color: white;
     transition: all 0.3s ease-in-out;
 }
