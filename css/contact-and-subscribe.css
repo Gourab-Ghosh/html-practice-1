@@ -5,6 +5,7 @@
 }
 
 .contact-us .box-content{
+    margin-top: 5rem;
     padding: 30px;
     display: flex;
     flex-direction: column;

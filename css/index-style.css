@@ -39,10 +39,6 @@
 
 /* ############################################## products ############################################## */
 
-.products{
-    margin-bottom: 5rem;
-}
-
 .products .box-content{
     display: flex;
     flex-direction: column;
