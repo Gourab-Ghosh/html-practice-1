@@ -1,14 +1,10 @@
 /* ############################################## contact us ############################################## */
 
-.contact-us::after{
-    content: "";
-    display: block;
-    margin-top: 200px;
+.contact-us{
+    background: #282727;
 }
 
 .contact-us .box-content{
-    background: #282727;
-    margin-top: 5rem;
     padding: 30px;
     display: flex;
     flex-direction: column;
@@ -33,10 +29,136 @@
 }
 
 .contact-us .details-content .details-input{
-    flex-basis: 47.5%;
+    width: 47.5%;
     height: 40%;
     font-weight: 300;
     font-size: 1.8rem;
     border: 2px #fff solid;
     padding: 15px 20px;
+}
+
+/* ############################################## subscribe ############################################## */
+
+.subscribe{
+    background: linear-gradient(rgb(75, 25, 90), rgb(188, 33, 44));
+}
+
+.subscribe .newsletter .heading{
+    width: 100%;
+    text-align: left;
+}
+
+.subscribe .heading::after{
+    content: "";
+    display: block;
+    border: 1px solid #f4f4f4;
+    border-radius: 10px;
+    height: 0;
+    width: 100%;
+}
+
+.subscribe .subscribe-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.subscribe .follow-us{
+    width: max(250px, 30%);
+    height: 12rem;
+    margin-bottom: 2rem;
+}
+
+.subscribe .newsletter{
+    width: 60%;
+    height: 15rem;
+}
+
+.subscribe .follow-us,
+.subscribe .newsletter{
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe .social-medias{
+    display: flex;
+    justify-content: space-between;
+    width: 25rem;
+}
+
+.subscribe .subscribe-form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subscribe .subscribe-form input[type="text"]{
+    width: 70%;
+    height: 80%;
+    font-weight: 300;
+    font-size: 1.8rem;
+    border: 2px #fff solid;
+    padding: 15px 20px;
+}
+
+.subscribe .copyright{
+    width: 100%;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* ############################################## making responsive ############################################## */
+
+@media (max-width: 1200px){
+    .subscribe .heading{
+        font-size: 3.2rem;
+    }
+
+    .subscribe .newsletter{
+        flex-basis: 65%;
+    }
+}
+
+@media (max-width: 768px){
+    .contact-us .details-content input[type="text"]{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .contact-us .details-content input[type="text"]:last-child{
+        margin-bottom: 0%;
+    }
+
+    .contact-us .details-content{
+        height: auto;
+    }
+
+    .subscribe .subscribe-container{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .subscribe .follow-us,
+    .subscribe .newsletter{
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .subscribe .follow-us{
+        height: 12rem;
+    }
+
+    .subscribe .newsletter{
+        height: 15rem;
+    }
+}
+
+@media (max-width: 500px){
+    .subscribe .subscribe-form input[type="text"]{
+        width: 55%;
+    }
 }

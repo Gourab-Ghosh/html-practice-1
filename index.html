@@ -112,7 +112,52 @@
         </div>
     </div>
 
-    <footer class="subscribe"></footer>
+    <footer class="subscribe">
+        <div class="container">
+            <div class="subscribe-container">
+                <div class="follow-us">
+                    <h1 class="heading text-light">Follow Us</h1>
+                    <div class="social-medias">
+                        <img src="./files/facebook.png" alt="Facebook">
+                        <img src="./files/Twitter.png" alt="Twitter">
+                        <img src="./files/linkedin.png" alt="Linkedin">
+                        <img src="./files/instagram.png" alt="Instagram">
+                    </div>
+                </div>
+    
+                <div class="newsletter">
+                    <h1 class="heading text-light">Newsletter</h1>
+                    <form class="subscribe-form">
+                        <input type="text" placeholder="Email" title="Enter Your " required>
+                        <input type="Submit" class="btn btn-primary">
+                    </form>
+                </div>
+                <p class="copyright text-light text-medium">Company Name &copy; 2020, All Rights Reserved</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $(document).ready(function(){
+        $("a").on('click', function(event) {
+
+            if (this.hash !== "") {
+            event.preventDefault();
+
+            var hash = this.hash;
+
+            $('html, body').animate({
+                scrollTop: $(hash).offset().top
+            }, 800, function(){
+
+                window.location.hash = hash;
+            });
+            }
+        });
+        });
+    </script>
 
 </body>
 </html>
