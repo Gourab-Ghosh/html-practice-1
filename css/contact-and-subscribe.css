@@ -1,11 +1,14 @@
 /* ############################################## contact us ############################################## */
 
+#contact-us{
+    height: max(6vh, 50px);
+}
+
 .contact-us{
     background: #282727;
 }
 
 .contact-us .box-content{
-    margin-top: 5rem;
     padding: 30px;
     display: flex;
     flex-direction: column;
