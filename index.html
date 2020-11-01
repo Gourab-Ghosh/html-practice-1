@@ -13,37 +13,7 @@
 </head>
 <body>
 
-    <nav class="navbar text-light">
-        <div class="container">
-            <div class="nav-items">
-                <div class="hamburger-container nav-item">
-                    <input type="checkbox">
-                    <div class="hamburger-lines">
-                        <div class="hamburger-line line1"></div>
-                        <div class="hamburger-line line2"></div>
-                        <div class="hamburger-line line3"></div>
-                    </div>
-                    <ul class="edited-list-items">
-                        <li class="edited-list-item"><a href="./index.html">Home</a></li>
-                        <li class="edited-list-item"><a href="./login.html">Login</a></li>
-                        <li class="edited-list-item"><a href="./register.html">Register</a></li>
-                        <li class="edited-list-item"><a href="./about.html">About Us</a></li>
-                        <li class="edited-list-item"><a href="#contact-us">Contact Us</a></li>
-                    </ul>
-                </div>
-
-                <h3 class="text-large nav-item">Company Name</h3>
-
-                <ul class="list-items nav-item">
-                    <li class="list-item"><a href="./index.html">Home</a></li>
-                    <li class="list-item"><a href="./login.html">Login</a></li>
-                    <li class="list-item"><a href="./register.html">Register</a></li>
-                    <li class="list-item"><a href="./about.html">About Us</a></li>
-                    <li class="list-item"><a href="#contact-us">Contact Us</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="load-navbar"></div>
 
     <div class="description do-not-overlap" id="home">
         <div class="box-content text-light">
@@ -93,52 +63,10 @@
         </div>
     </div>
 
-    <div id="contact-us"></div>
-
-    <div class="contact-us">
-        <div class="container">
-            <div class="box-content">
-                <h1 class="heading text-light">Contact Us</h1>
-                <form>
-                    <div class="details-content">
-                        <input type="text" placeholder="Name" title="Enter Your " required class="details-input text-black">
-                        <input type="text" placeholder="Phone Number" title="Enter Your " required class="details-input text-black">
-                        <input type="text" placeholder="Email" title="Enter Your " required class="details-input text-black">
-                        <input type="text" placeholder="Message" title="Enter Your " required class="details-input text-black">
-                    </div>
-                    <input type="Submit" class="btn btn-primary">
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <footer class="subscribe">
-        <div class="container">
-            <div class="subscribe-container">
-                <div class="follow-us">
-                    <h1 class="heading text-light">Follow Us</h1>
-                    <div class="social-medias">
-                        <img src="./files/facebook.png" alt="Facebook">
-                        <img src="./files/Twitter.png" alt="Twitter">
-                        <img src="./files/linkedin.png" alt="Linkedin">
-                        <img src="./files/instagram.png" alt="Instagram">
-                    </div>
-                </div>
-    
-                <div class="newsletter">
-                    <h1 class="heading text-light">Newsletter</h1>
-                    <form class="subscribe-form">
-                        <input type="text" placeholder="Email" title="Enter Your " required>
-                        <input type="Submit" class="btn btn-primary">
-                    </form>
-                </div>
-                <p class="copyright text-light text-medium">Company Name &copy; 2020, All Rights Reserved</p>
-            </div>
-        </div>
-    </footer>
+    <div id="load-contact-and-subscribe"></div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/smooth-scrolling.js"></script>
+    <script src="./js/include-html.js"></script>
 
 </body>
 </html>
