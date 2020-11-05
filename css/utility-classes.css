@@ -79,14 +79,14 @@
 }
 
 .btn-primary{
-    border: 2px solid darkgreen;
-    color: darkgreen;
-    background-color: white;
+    /* border: 2px solid darkgreen; */
+    color: white;
+    background-color: darkgreen;
     transition: all 0.3s ease-in-out;
 }
 
 .btn-primary:hover{
-    background-color: #ddd;
+    background-color: rgb(0, 80, 0);
 }
 
 .btn-secondary{
